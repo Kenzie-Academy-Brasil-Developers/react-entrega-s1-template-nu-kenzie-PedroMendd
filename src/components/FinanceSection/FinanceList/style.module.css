@@ -1,0 +1,4 @@
+.financeList {
+    display: flex;
+    flex-direction: column;
+}

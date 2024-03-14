@@ -1,0 +1,13 @@
+.containerHome {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+.page {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
