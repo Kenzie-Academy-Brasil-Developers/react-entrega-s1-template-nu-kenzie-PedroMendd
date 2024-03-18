@@ -21,12 +21,15 @@ function App() {
     <div>
       <HomePage>
         <Header />
-        <FinanceForm onAddTransaction={handleAddTransaction} />
+        <div>
+          <FinanceForm onAddTransaction={handleAddTransaction} />
+
+          <ValorTotal transactions={transactions} />
+        </div>
         <FinanceSection
           transactions={transactions}
           onDelete={handleDeleteTransaction}
         />
-        <ValorTotal transactions={transactions} />
       </HomePage>
     </div>
   );
