@@ -7,14 +7,14 @@
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem;
-}
-
-.containerTotal {
-    display: flex;
-    gap: 8rem;
-}
-
-.totalValue {
-    font-weight: 800;
-    color: var(--color-primary);
+  
+    .containerTotal {
+        display: flex;
+        gap: 8rem;
+    }
+  
+    .totalValue {
+        font-weight: 800;
+        color: var(--color-primary);
+    }
 }

@@ -4,7 +4,12 @@
   gap: 3.5rem;
 }
 
-.page {
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;

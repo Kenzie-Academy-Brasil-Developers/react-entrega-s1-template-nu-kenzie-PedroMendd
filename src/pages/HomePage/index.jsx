@@ -1,34 +1,12 @@
-import React, { useState } from "react";
-import { FinanceForm } from "../../components/FinanceForm";
-import { FinanceSection } from "../../components/FinanceSection";
-import { ValorTotal } from "../../components/Total";
-import { Header } from "../../components/header";
-import styles from "./style.module.css";
+import React from "react";
+import styles from "./style.module.scss";
 
-export const HomePage = () => {
-  const [transactions, setTransactions] = useState([]);
-
-  const handleAddTransaction = (newTransaction) => {
-    setTransactions([...transactions, newTransaction]);
-  };
-
-  const handleDeleteTransaction = (updatedTransactions) => {
-    setTransactions(updatedTransactions);
-  };
-
+export const HomePage = ({ children }) => {
   return (
     <>
-      <div className={styles.page}>
-        <Header />
-        <main>
-          <div>
-            <div className={styles.containerHome}>
-              <FinanceForm onAddTransaction={handleAddTransaction} />
-              <FinanceSection transactions={transactions} onDelete={handleDeleteTransaction} />
-            </div>
-
-            <ValorTotal transactions={transactions} />
-          </div>
+      <div >
+        <main className={styles.page}>
+          <div className={styles.containerHome}>{children}</div>
         </main>
       </div>
     </>

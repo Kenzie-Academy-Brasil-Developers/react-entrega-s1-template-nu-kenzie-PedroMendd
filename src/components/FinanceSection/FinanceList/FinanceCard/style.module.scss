@@ -1,62 +1,60 @@
 .financeContainer {
-    background-color: var(--grey-1);
-    margin-top: 1.5rem;
-    width: 560px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .entrada {
+  background-color: var(--grey-1);
+  margin-top: 1.5rem;
+  width: 560px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  .entrada, .despesa {
     width: 4px;
     height: 87px;
-    background-color: var(--color-secondary);
     border-radius: 4px 0px 0px 4px;
-    margin-right: 1rem; 
+    margin-right: 1rem;
+  }
+
+  .entrada {
+    background-color: var(--color-secondary);
   }
 
   .despesa {
-    width: 4px;
-    height: 87px;
     background-color: var(--grey-2);
-    border-radius: 4px 0px 0px 4px;
-    margin-right: 1rem; 
   }
-  
+
   .flexBox {
     display: flex;
     flex: 1;
     justify-content: space-between;
   }
-  
+
   .typeContainer {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-  
-  .typeContainer h1 {
+
+  h1 {
     font-size: 1rem;
     font-weight: 700;
   }
-  
+
   .typeText {
     font-size: 0.75rem;
   }
-  
+
   .moneyContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
-    margin-right: 1rem; 
+    margin-right: 1rem;
   }
-  
-  .moneyContainer button {
+
+  button {
     font-size: 0.7rem;
     width: 3.0625rem;
     height: 1.1875rem;
     border-radius: 4px;
     background-color: var(--grey-2);
   }
-  
+}
